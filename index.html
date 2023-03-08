@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" crossorigin as="font">
+    <link rel="stylesheet" type="text/css" href="common/css/main.css">
+    <title> Base FE sample </title>
+</head>
+
+<main>
+    <div class="test">
+         F8 Full stack
+    </div>
+    <script>
+        var orders = [
+            {
+                name: 'Khóa học HTML - CSS Pro',
+                price: 0
+            },
+            {
+                name: 'Khóa học Javascript Pro',
+                price: 0
+            },
+            {
+                name: 'Khóa học React Pro',
+                price: 0
+            },
+            {
+                name: 'Ruby',
+                price: 350
+            }            
+        ]
+        var courseName = orders.find(function checkData(value , index){          
+            // console.log(index) ;
+            // return value.price === 0;
+            return value.name = 'Ruby';
+        })
+        console.log(courseName);
+        // for(var i=0; i < orders.length; i++){
+        //         var price = orders[i].price;
+        //          console.log(price); 
+        //     }
+        // function getTotal(){
+        //     var arrPrice= [];
+        //     for(var i=0; i < orders.length; i++){
+        //         var price = orders[i].price;
+        //         arrPrice.push(price);
+                                 
+        //     }
+        //     console.log(arrPrice); 
+        //     return arrPrice;
+        // }
+        //     for( let i=0 ; i<10 ; i++){
+        //         if (i <= 5){
+        //             console.log(i);
+        //         }
+                
+        //     }
+        //     for(let i = 100 ;i>0 ; i-=5){
+        //         console.log(i);
+        //     }
+        // function viduVar () {
+        //     for( var i =0 ; i<5 ; i++){
+        //         console.log(i);
+        //     }
+        //     console.log(`day la ngoai vao var ${i}`);
+        // };
+        // viduVar();
+        // orders.forEach(function(value,index){
+        //      console.log(index , value);
+             
+        // })
+    </script>
+</main>
+
+</html>
